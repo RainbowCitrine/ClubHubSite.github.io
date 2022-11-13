@@ -14,12 +14,12 @@ menu.addEventListener('click', mobileMenu)
 
 const hideMobileMenu = () =>{
     const menubars = document.querySelector('.is-active')
-    if(window.innerWidth <- 768 && menubars)
+    if(window.innerWidth <= 768 && menubars)
     {
         menu.classList.toggle('is-active')
         menuLinks.classList.remove('active')
     }
 }
 
-menuLinks.add('click', hideMobileMenu)
+menuLinks.addEventListener('click', hideMobileMenu)
 navLogo.addEventListener('click', hideMobileMenu)
